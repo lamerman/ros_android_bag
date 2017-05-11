@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">ROS Android Bag</string>
+    <string name="title_activity_logs">Logs</string>
+    <string name="help_text">
+        "Runs the native Rosbag Record application that records data from ROS topics directly "
+        "on the phone. For example, it could be useful if you want to save raw video stream that is "
+        "otherwise impossible to transmit over the network. \n\n"
+
+        "You can find description of the Rosbag Record here: http://wiki.ros.org/rosbag/Commandline#record \n\n"
+
+        "The bags you record will be available on the filesystem. The exact location is the cache directory "
+        "of this application. You can find the path in the very beginning of logs after the record was started. \n\n"
+
+        "'Master URL' - set the master url. It should be in form of: http://localhost:11311 \n\n"
+
+        "'Topics' - set to either record all available topic or only specific ones. In the latter case, "
+        "specify the topics separated by comma. \n\n"
+
+        "Additional arguments - the list of arguments that will be passed to the executable. For example, "
+        " '--size 256 --lz4'. You can only pass the arguments that are supported by the Rosbag Record application. "
+        "Here is the help message where you can find the list of supported arguments. \n\n"
+        "-h, --help            show this help message and exit \n"
+        "-a, --all             record all topics \n"
+        "-e, --regex           match topics using regular expressions \n"
+        "-x EXCLUDE_REGEX, --exclude=EXCLUDE_REGEX \n"
+        "                      exclude topics matching the follow regular expression \n"
+        "                      (subtracts from -a or regex) \n"
+        "-q, --quiet           suppress console output \n"
+        "-o PREFIX, --output-prefix=PREFIX \n"
+        "                      prepend PREFIX to beginning of bag name (name will \n"
+        "                      always end with date stamp) \n"
+        "-O NAME, --output-name=NAME \n"
+        "                      record to bag with name NAME.bag \n"
+        "--split               split the bag when maximum size or duration is reached \n"
+        "--size=SIZE           record a bag of maximum size SIZE MB. (Default: \n"
+        "                      infinite) \n"
+        "--duration=DURATION   record a bag of maximum duration DURATION in seconds, \n"
+        "                      unless 'm', or 'h' is appended. \n"
+        "-b SIZE, --buffsize=SIZE \n"
+        "                      use an internal buffer of SIZE MB (Default: 256, 0 = \n"
+        "                      infinite) \n"
+        "--chunksize=SIZE      Advanced. Record to chunks of SIZE KB (Default: 768) \n"
+        "-l NUM, --limit=NUM   only record NUM messages on each topic \n"
+        "--node=NODE           record all topics subscribed to by a specific node \n"
+        "-j, --bz2             use BZ2 compression \n"
+        "--lz4                 use LZ4 compression \n\n"
+
+        "You can always see the command line with the executable and arguments in logs "
+        "to understand how you run the application \n\n"
+
+        "'Additional environment variables' - comma separated list of key value pairs. For example, "
+        "'MYVAR=1,OTHERVAR=abc'. They will be set in addition to those that are set by default. Those "
+        "are: ROS_MASTER_URI, HOME. You can override the default environment variables, but please "
+        "note that the ROS_MASTER_URI is changed by the 'Master URL' field.\n"
+        "You can escape comma in key or value with \\, if needed\n\n"
+
+        "'Start record' launches the executable. \n\n"
+
+        "'Show output' shows the output from both stdout and stderr of the running executable. \n\n"
+    </string>
+    <string name="action_help">Help</string>
+    <string name="title_activity_help">Help</string>
+    <string name="preference_file_key">preference_file</string>
+</resources>
