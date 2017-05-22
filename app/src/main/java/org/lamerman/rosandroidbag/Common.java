@@ -1,4 +1,4 @@
-package org.lamerman.rosforandroidbag;
+package org.lamerman.rosandroidbag;
 
 import android.app.ActivityManager;
 import android.content.Context;

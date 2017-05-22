@@ -1,10 +1,12 @@
 <resources>
-    <string name="app_name">ROS Android Bag</string>
+    <string name="app_name">ROS Bag</string>
     <string name="title_activity_logs">Logs</string>
     <string name="help_text">
         "Runs the native Rosbag Record application that records data from ROS topics directly "
         "on the phone. For example, it could be useful if you want to save raw video stream that is "
         "otherwise impossible to transmit over the network. \n\n"
+
+        "This app is free software and uses opensource Robot Operating System code of the ROS Bag package \n\n"
 
         "You can find description of the Rosbag Record here: http://wiki.ros.org/rosbag/Commandline#record \n\n"
 

@@ -1,4 +1,4 @@
-package org.lamerman.rosforandroidbag;
+package org.lamerman.rosandroidbag;
 
 import android.content.Context;
 import android.content.Intent;
